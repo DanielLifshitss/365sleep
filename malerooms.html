@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מגורי בנים</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="functions.js"></script>
+</head>
+<body style="background-image:url(sleeping.jpg) ; background-position:center">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+            <div class="container">
+              <img src="armybedroom.jpg" alt="Avatar" class="image">
+              <div style="background-color: white; font-size: 30px; text-align: center">חדר 1</div>
+              <div class="middle">
+                <div style="height: 110px; background-color:white ;padding:45px 32px ">מיטה 1</div>
+                <br>
+                <div style="height: 100px;background-color:white ;padding:40px 32px ">מיטה 2</div>
+                <br>
+                <div style="height: 90px;background-color:white;padding:38px 32px ">מיטה 3</div>
+                <br>
+                <div style="height: 80px;background-color:white;padding:30px 32px  ">מיטה 4</div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+              <div class="container">
+                <img src="armybedroom.jpg" alt="Avatar" class="image">
+                <div style="background-color: white; font-size: 30px; text-align: center">חדר 2</div>
+                <div class="middle">
+                  <div style="height: 110px; background-color:white ;padding:45px 32px ">מיטה 1</div>
+                  <br>
+                  <div style="height: 100px;background-color:white ;padding:40px 32px ">מיטה 2</div>
+                  <br>
+                  <div style="height: 90px;background-color:white;padding:38px 32px ">מיטה 3</div>
+                  <br>
+                  <div style="height: 80px;background-color:white;padding:30px 32px  ">מיטה 4</div>
+                </div>
+              </div>  
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+                <div class="container">
+                  <img src="armybedroom.jpg" alt="Avatar" class="image">
+                  <div style="background-color: white; font-size: 30px; text-align: center">חדר 3</div>
+                  <div class="middle">
+                    <div style="height: 110px; background-color:white ;padding:45px 32px ">מיטה 1</div>
+                    <br>
+                    <div style="height: 100px;background-color:white ;padding:40px 32px ">מיטה 2</div>
+                    <br>
+                    <div style="height: 90px;background-color:white;padding:38px 32px ">מיטה 3</div>
+                    <br>
+                    <div style="height: 80px;background-color:white;padding:30px 32px  ">מיטה 4</div>
+                  </div>
+                </div>  
+              </div>
+              
+        <<div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+            <div class="container">
+              <img src="armybedroom.jpg" alt="Avatar" class="image">
+              <div style="background-color: white; font-size: 30px; text-align: center">חדר 4</div>
+              <div class="middle">
+                <div style="height: 110px; background-color:white ;padding:45px 32px ">מיטה 1</div>
+                <br>
+                <div style="height: 100px;background-color:white ;padding:40px 32px ">מיטה 2</div>
+                <br>
+                <div style="height: 90px;background-color:white;padding:38px 32px ">מיטה 3</div>
+                <br>
+                <div style="height: 80px;background-color:white;padding:30px 32px  ">מיטה 4</div>
+              </div>
+            </div>  
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    
+      <div>
+        <button class="open-button" onclick="openForm()">להירשם לחדר</button>
+      </div>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>להירשם לחדר</h1>
+    
+          <label for="name"><b>שם מלא</b></label>
+          <input type="text" placeholder="'Daniel Lifshits'" name="name" required>
+    
+          <label for="squad"><b>פלוגה</b></label>
+          <input type="text" placeholder="'Reshet'" name="squad" required>
+    
+          <label for="room"><b>חדר</b></label>
+          <input type="text" placeholder="'2'" name="room" required>
+    
+          <label for="bed"><b>מיטה</b></label>
+          <input type="text" placeholder="'2'" name="bed" required>
+    
+          <button type="submit" class="btn">תפוס מיטה</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">סגירה</button>
+        </form>
+      </div>
+
+    <div>
+      <button>
+        <a href="index1.html">back to menu</a>
+      </button>
+    </div>
+    
+       
+</body>
+</html>
