@@ -1,8 +1,10 @@
+/* Main Page CSS */
+/* Welcome page Header Slider */
 #slide {
   position: absolute;
   left: -600px;
   width: 550px;
-  height: 38px;
+  height: 60px;
   background: white;
   color: black;
   -webkit-animation: slide 0.5s forwards;
@@ -11,12 +13,12 @@
   animation-delay: 0.5s;
 }
 
+/* Main Page Male Icon Slide */
 #slide-male {
   position: absolute;
   left: -600px;
   width: 550px;
   height: 38px;
-  background: white;
   color: black;
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 1s;
@@ -24,12 +26,12 @@
   animation-delay: 0.5s;
 }
 
+/* Main Page female Icon Slide */
 #slide-female {
   position: absolute;
   left: -600px;
   width: 550px;
   height: 38px;
-  background: white;
   color: black;
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 1s;
@@ -43,6 +45,7 @@
 @keyframes slide {
   100% { left: 0; }
 }
+
 
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -120,11 +123,36 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 50%;
 }
 
-.image {
+.image-male {
   opacity: 1;
   display: block;
-  width: 400px;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+  bottom: -100px;
+  left: 200px;
+  
+}
+
+.image-female {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+  bottom: -300px;
+  left: 200px;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 500px;
+  height: 500px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -139,6 +167,41 @@ body {font-family: Arial, Helvetica, sans-serif;}
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+.middle-female {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: -220px;
+  left: 245px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .middle-female {
+  opacity: 1;
+}
+
+
+.middle-male {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50px;
+  left: 280px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.container:hover .middle-male {
+  opacity: 1;
+}
+
 
 .container:hover .image {
   opacity: 0.3;
@@ -198,7 +261,7 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px 62px;
   position: absolute;
   bottom: 8px;
